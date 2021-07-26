@@ -15,6 +15,12 @@ body {
     background-repeat: no-repeat;
 }
 
+.logo {
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 49px;
+}
+
 a {
     text-decoration: none;
 }
@@ -29,6 +35,8 @@ a {
 
 .site-navigation,
 .basket-navigation {
+    display: grid;
+    margin-left: 502px;
     list-style: none;
 }
 
@@ -49,15 +57,52 @@ a {
 }
 .features-item {
     text-align: left;
+    width: 300px;
+    line-height: 30px;
+    margin-bottom: 173px;
 }
+
+.information h2 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
 .features-item h3 {
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
+.features-item p {
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
 .features-item a {
     text-transform: uppercase;
+}
+
+.button-1,
+.button-2,
+.button-3 {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    
+    color: white;
+}
+
+.button-1 {
+    background-color: #fb565a;
+}
+
+.button-2 {
+    background-color: #00ca74;
+}
+
+.button-3 {
+    background-color: #efc84a;
 }
 
 .index-columns ul{
@@ -67,4 +112,12 @@ a {
     margin-right: 201px;
     gap: 100px;
     grid-template-columns: 366px 366px 366px;
+}
+
+.index-columns-1 {
+    display: grid;
+    width: 1100px;
+    margin-left: 141px;
+    margin-right: 140px;
+    grid-template-columns: 732px 366px;
 }
