@@ -1,48 +1,54 @@
 body {
     margin: 0;
     padding: 0;
-
-
+    
+    
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: #283136;
     text-decoration: none;
-
+    
     background-color: #ffffff;
     background-position: top center;
     background-repeat: no-repeat;
 }
 
-.logo {
-    position: absolute;
-    margin-left: 140px;
-    margin-top: 49px;
+.site-navigation {
+    display: flex;
 }
 
-a {
-    text-decoration: none;
-}
 
-.main-navigation {
-    font-size: 16px;
-    line-height: 30px;
-    color: #000000;
-    
-    background-color: #ffffff;
-}
 
 .site-navigation,
 .basket-navigation {
-    display: grid;
-    margin-left: 502px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
     list-style: none;
+}
+
+.link::before {
+    content: "";
+
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 68px;
+    right: 220px;
+
+    background-image: url("../imgs/cart-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
 }
 
 .site-navigation a,
 .basket-navigation a {
+    display: block;
     color: black;
+    padding: 20px 35px;
 }
 
 .site-navigation a:hover,
@@ -52,19 +58,88 @@ a {
     color: #fb565a;
 }
 
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0 );
+    overflow: hidden;
+} 
+
+.container-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: top;    
+    height: 413px;
+}
+
+.container-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+}
+
+.container-block-1 p {
+    font-family: "Roboto" sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.container-block-1 a {
+    text-transform: uppercase;
+    padding: 17px 54px;
+    color: #ffffff;
+    background-color: #fb565a;
+}
+
+
+.page-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+.top-background {
+    background-color: #eee;
+}
+
+
+.feature-block ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
 .features-list {
     list-style: none;
 }
+
 .features-item {
     text-align: left;
     width: 300px;
     line-height: 30px;
     margin-bottom: 173px;
-}
-
-.information h2 {
-    font-size: 45px;
-    line-height: 45px;
 }
 
 .features-item h3 {
@@ -75,16 +150,16 @@ a {
 
 .features-item p {
     line-height: 24px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .features-item a {
     text-transform: uppercase;
 }
 
-.button-1,
-.button-2,
-.button-3 {
+.feature-button-1,
+.feature-button-2,
+.feature-button-3 {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 17px;
@@ -93,31 +168,85 @@ a {
     color: white;
 }
 
-.button-1 {
+.feature-button-1 {
     background-color: #fb565a;
 }
 
-.button-2 {
+.feature-button-2 {
     background-color: #00ca74;
 }
 
-.button-3 {
+.feature-button-3 {
     background-color: #efc84a;
 }
 
-.index-columns ul{
-    display: grid;
-    width: 1100px;
-    margin-left: 141px;
-    margin-right: 201px;
-    gap: 100px;
-    grid-template-columns: 366px 366px 366px;
+.information-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.index-columns-1 {
-    display: grid;
-    width: 1100px;
-    margin-left: 141px;
-    margin-right: 140px;
-    grid-template-columns: 732px 366px;
+.information-list {
+    list-style-image: url("../imgs/Layer.png");
+}
+
+.info-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.information-list {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.information-item p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 26px;
+}
+
+.information-item h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.table-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.percent {
+    font-size: 45px;
+    line-height: 10.06px;
+    font-weight: 700;
+    padding-bottom: 28px;
+}
+
+td:not(:last-child) {
+    padding-right: 26px;
+}
+
+.information {
+    padding-bottom: 140px;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 135px;
+}
+
+.contacts {
+    background-image: url("../imgs/map.jpg");
+    width: auto;
+    height: 413px;
 }
