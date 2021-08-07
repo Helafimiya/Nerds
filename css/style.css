@@ -19,8 +19,6 @@ body {
     display: flex;
 }
 
-
-
 .site-navigation,
 .basket-navigation {
     font-size: 16px;
@@ -56,6 +54,21 @@ body {
 .basket-navigation a:hover,
 .basket-navigation a:focus {
     color: #fb565a;
+}
+
+.site-navigation a:active,
+.basket-navigation a:active {
+    color: #000000;
+}
+
+.container-button:hover {
+    background-color: #e74246;
+}
+
+.container-button:active {
+    background-color: #d7373b;
+    color: #e37376;
+    box-shadow: 0 3px 0 0  #c13135 inset;
 }
 
 .visually-hidden {
@@ -155,9 +168,7 @@ a {
     padding-bottom: 50px;
 }
 
-.features-item a {
-    text-transform: uppercase;
-}
+
 
 .feature-button-1,
 .feature-button-2,
@@ -168,18 +179,49 @@ a {
     padding-bottom: 17px;
     
     color: white;
+    text-transform: uppercase;
 }
 
 .feature-button-1 {
     background-color: #fb565a;
 }
 
+.feature-button-1:hover {
+    background-color: #e74246;
+}
+
+.feature-button-1:active {
+    background-color: #d7373b;
+    color: #e37376;
+    box-shadow: 0 3px 0 0  #c13135 inset;
+}
+
 .feature-button-2 {
     background-color: #00ca74;
 }
 
+.feature-button-2:hover {
+    background-color: #00bc6c;
+}
+
+.feature-button-2:active {
+    background-color: #00aa62;
+    color: #4dc491;
+    box-shadow: 0 3px 0 0  #009958 inset;
+}
+
 .feature-button-3 {
     background-color: #efc84a;
+}
+
+.feature-button-3:hover {
+    background-color: #eab534;
+}
+
+.feature-button-3:active {
+    background-color: #e5a722;
+    color: #edc265;
+    box-shadow: 0 3px 0 0  #ce961f inset;
 }
 
 .information-list {
@@ -310,6 +352,16 @@ td:not(:last-child) {
     text-transform: uppercase;
 }
 
+.button:hover {
+    background-color: #e74246;
+}
+
+.button:active {
+    background-color: #d7373b;
+    color: #e37376;
+    box-shadow: 0 3px 0 0  #c13135 inset;
+}
+
 .main-footer {
     display: grid;
     grid-template-columns: 260px 790px;
@@ -334,6 +386,7 @@ td:not(:last-child) {
     border-radius: 50%;
     margin-right: 15px;
 }
+
 .social-button-2 {
     display: block;
     height: 77px;
@@ -355,7 +408,21 @@ td:not(:last-child) {
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 50%;
-   
+    
+}
+
+.social-button-1:hover,
+.social-button-2:hover,
+.social-button-3:hover {
+    background-color: #e74246;
+}
+
+.social-button-1:active,
+.social-button-2:active,
+.social-button-3:active {
+    background-color: #d7373b;
+    color: #e37376;
+    box-shadow: 0 3px 0 0  #c13135 inset;
 }
 
 .invitation span{
@@ -363,5 +430,5 @@ td:not(:last-child) {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     line-height: 36px;
-
+    
 }
