@@ -117,9 +117,34 @@
           <p class="num">
             тел. +7 (812) 275-75-75
           </p>
-          <button class="button" type="button">Напишите нам</button>
+          <button class="button open-modal" type="button">Напишите нам</button>
         </div>
       </section>
+
+      <section class="modal">
+        <h2>Напишите нам</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="username"> 
+            <p>
+              <label class="modal-form-label">Ваше имя:</label>
+              <input type="text" name="username" placeholder="Имя Фамилия"/>
+            </p>
+            <p>
+              <label class="modal-form-label">Ваш e-mail:</label>
+              <input type="text" name="email" placeholder="email@example.com"/>
+            </p>
+          </div>
+          
+          <label class="modal-form-label">Текст письма:</label>
+          <textarea class="comment" id="comment-field" rows="5"placeholder="В свободной форме"></textarea>
+
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </section>
+
     </main>
     <footer class="main-footer page-padding">
       <ul class="footer-list">
@@ -138,5 +163,6 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <script src="JS.js"></script>
   </body>
 </html>
