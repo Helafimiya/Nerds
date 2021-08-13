@@ -58,7 +58,7 @@ body {
 
 .site-navigation a:active,
 .basket-navigation a:active {
-    color: #000000;
+    color: #a6a6a6;
 }
 
 .container-button:hover {
@@ -168,8 +168,6 @@ a {
     line-height: 24px;
     padding-bottom: 50px;
 }
-
-
 
 .feature-button-1,
 .feature-button-2,
